@@ -1,0 +1,79 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@keyframes image_slider{
+    0%{
+        background-image: url("../images/b_img1.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    20%{
+        background-image: url("../images/b_img2.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    40%{
+        background-image: url("../images/b_img3.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    60%{
+        background-image: url("../images/b_img4.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    80%{
+        background-image: url("../images/b_img5.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    100%{
+        background-image: url("../images/b_img6.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+div.container-fluid{
+    width: 100vw;
+    height: 100vh;   
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	
+    animation-name: image_slider;
+    animation-duration: 10s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+form.login_frm, form.search_frm, form.reg_frm{
+	width: 70%;
+	padding: 2.5rem;
+	background-color: whitesmoke;
+	border-radius: 0px;	
+	border-bottom: thick solid dodgerblue;
+	border-top: thick solid dodgerblue;
+}
+form.reg_frm{
+    width: 50% !important;
+    background-color: rgba(255,255,255,0.9) !important;   
+}
+label.form-label{
+	font-weight: bolder;
+}
+a#sign_up_link{
+	padding-left: 8px; 
+	padding-right: 8px;
+	text-decoration: none;
+}
+a#sign_up_link:hover{
+	text-decoration: underline;
+}
